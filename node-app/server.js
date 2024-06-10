@@ -1,16 +1,17 @@
 const express = require('express');
 const path = require('path');
-
 const app = express();
-const port = 3000;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Обработка сайта
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
+app.get('/data', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'js', 'data2.json'));
+});
+
+app.listen(3000, () => {
+    console.log('Server is running on port 3000');
 });
