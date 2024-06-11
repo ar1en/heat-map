@@ -38,7 +38,7 @@ function init() {
                         balloonContent: item.stop_name
                     }, {
                         preset: 'islands#icon',
-                        iconColor: '#0095b6'
+                        iconColor: '#8B008B'
                     });
                     allPlacemarks.push(myPlacemark);
                 });
