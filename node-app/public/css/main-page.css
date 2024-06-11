@@ -364,3 +364,12 @@
     margin-right: 3px;
   }
 }
+ .map-container{
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+ }
+ .map-view{
+   height: 10%;
+   width: 90%;
+ }
