@@ -373,3 +373,23 @@
    height: 10%;
    width: 90%;
  }
+
+ .logo{
+   height: 60px;
+   width: auto;
+ }
+
+ .header-wrapper{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }
+
+ .main-header{
+   margin-left: 50px;
+ }
+
+ .header-logo{
+   display: flex;
+   justify-content: space-between;
+ }
