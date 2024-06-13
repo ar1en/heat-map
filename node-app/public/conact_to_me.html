@@ -31,11 +31,7 @@
     
     
     
-    <!--<script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "Site2"
-    }</script>-->
+ 
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="conact_to_me">
     <meta property="og:description" content="">
@@ -69,59 +65,7 @@
             dynamicLoadScript();
         });
     </script>
-    <!--<script>
-        document.addEventListener("recaptchaLoaded", function() {
-            if (!gdprConfirmed()) {
-                return;
-            }
-            (function (grecaptcha, sitekey, actions) {
-                var recaptcha = {
-                    execute: function (action, submitFormCb) {
-                        try {
-                            grecaptcha.execute(
-                                sitekey,
-                                {action: action}
-                            ).then(function (token) {
-                                var forms = document.getElementsByTagName('form');
-
-                                for (var i = 0; i < forms.length; i++) {
-                                    var fields = forms[i].getElementsByTagName('input');
-
-                                    for (var j = 0; j < fields.length; j++) {
-                                        var field = fields[j];
-
-                                        if ('recaptchaResponse' === field.getAttribute('name')) {
-                                            field.setAttribute('value', token);
-                                            break;
-                                        }
-                                    }
-                                }
-                                submitFormCb();
-                            });
-                        } catch (e) {
-                            var formError = document.querySelector('.u-form-send-error');
-
-                            if (formError) {
-                                formError.innerText = 'Неверный владелец сайта: ' + e.message.replace(/:[\s\S]*/, '');
-                                formError.style.display = 'block';
-                            }
-                        }
-                    },
-
-                    executeContact: function (submitFormCb) {
-                        recaptcha.execute(actions['contact'], submitFormCb);
-                    }
-                };
-
-                window.recaptchaObject = recaptcha;
-            })(
-                grecaptcha,
-                
-                '6LcX4PApAAAAAGR5bgQBtHc-kaMGwEoq8-pmYnK0',
-                {'contact': 'contact'}
-            );
-        });
-    </script>-->
+    
 <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
   <body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="ru"><header class="u-clearfix u-header u-header" id="sec-0335"><nav class="u-align-left u-menu u-menu-hamburger u-offcanvas u-menu-1" data-responsive-from="XL">
         <div class="menu-collapse">
@@ -171,11 +115,6 @@
               <a href="#" class="u-black u-border-none u-btn u-btn-submit u-button-style u-btn-1">Отправить</a>
               <input type="submit" class="u-form-control-hidden" onclick="sendMail()">
             </div>
-            <!--<div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-            <input type="hidden" value="" name="recaptchaResponse">
-            <input type="hidden" name="formServices" value="7beeba18-5306-eabf-eee9-b07875a7680d">
-            <input type="hidden" name="siteKey" value="6LcX4PApAAAAAGR5bgQBtHc-kaMGwEoq8-pmYnK0">-->
           </form>
         </div>
       </div>
